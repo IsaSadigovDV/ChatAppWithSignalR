@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace Chat.Controllers
@@ -18,9 +19,10 @@ namespace Chat.Controllers
             _userManager = userManager;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            List<AppUser> appUsers = await _userManager.Users.ToListAsync();
+            return View(appUsers);
         }
 
         public async Task<IActionResult> CreateUser()
