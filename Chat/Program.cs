@@ -1,9 +1,25 @@
+using Chat.Contexts;
 using Chat.Hubs;
+using Chat.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
+{
+    opt.Password.RequiredLength = 8;
+})
+        .AddDefaultTokenProviders().AddEntityFrameworkStores<ChatDbContext>();
+
+builder.Services.AddDbContext<ChatDbContext>(opt =>
+{
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+});
+
 builder.Services.AddSignalR();
 var app = builder.Build();
 
@@ -25,6 +41,6 @@ app.MapHub<ChatHub>("/chatHub");
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Account}/{action=Login}/{id?}");
 
 app.Run();
