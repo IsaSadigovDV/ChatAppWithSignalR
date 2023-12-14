@@ -31,7 +31,7 @@
 </div>
 
 
-<div style="display:flex; justify-content:end" class="container">
+<div style="display:flex;" class="container">
     <ul>
         @foreach (var item in Model)
         {
@@ -52,11 +52,21 @@
 <script>
     var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
     connection.start();
-    connection.on("ReceiveMessage", function(user,message){
-           var li = document.createElement("li");
-             document.getElementById("messagesList").appendChild(li);
-             li.textContent = `${user} says ${message}`;
-    })
+    //connection.on("ReceiveMessage", function(user,message){
+    //       var li = document.createElement("li");
+    //         document.getElementById("messagesList").appendChild(li);
+    //         li.textContent = `${user} says ${message}`;
+    //})
+    connection.on("ReceiveMessage", function (user, message, timestamp) {
+        var li = document.createElement("li");
+        document.getElementById("messagesList").appendChild(li);
+
+        var parsedTimestamp = new Date(timestamp);
+        var formattedTimestamp = parsedTimestamp.toLocaleTimeString();
+
+        li.textContent = `${user} says ${message} at ${formattedTimestamp}`;
+    });
+
 
     connection.on("Loggin", function (userId){
 

@@ -11515,11 +11515,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\Chat\\Chat\\Chat.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\Api\\ChatAppWithSignalR\\Chat\\Chat.csproj",
       "projectName": "Chat",
-      "projectPath": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\Chat\\Chat\\Chat.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\Api\\ChatAppWithSignalR\\Chat\\Chat.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\Chat\\Chat\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\Api\\ChatAppWithSignalR\\Chat\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,19 +1,19 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\Chat\\Chat\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Chat.bundle.scp.css",
+      "Id": "C:\\Users\\HP\\Desktop\\Api\\ChatAppWithSignalR\\Chat\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Chat.bundle.scp.css",
       "PackagePath": "staticwebassets\\Chat.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\Chat\\Chat\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\HP\\Desktop\\Api\\ChatAppWithSignalR\\Chat\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\Chat\\Chat\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
+      "Id": "C:\\Users\\HP\\Desktop\\Api\\ChatAppWithSignalR\\Chat\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.js"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\Chat\\Chat\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
+      "Id": "C:\\Users\\HP\\Desktop\\Api\\ChatAppWithSignalR\\Chat\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.min.js"
     },
     {

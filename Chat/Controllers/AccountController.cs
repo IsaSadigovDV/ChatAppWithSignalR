@@ -25,7 +25,7 @@ namespace Chat.Controllers
             return View();
         }
 
-            [HttpPost]  
+        [HttpPost]  
         public async Task<IActionResult> Login(AppUser appUser)
         {
             AppUser user = await _userManager.FindByNameAsync(appUser.UserName);

@@ -37,6 +37,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
 app.MapHub<ChatHub>("/chatHub");
 
 app.MapControllerRoute(

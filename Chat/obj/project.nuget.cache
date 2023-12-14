@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sXcJkK0O68jZ+ryXdgNmg0ePM8KjH5NteGS8N+p+XU0tt1Jm6WqOc6lnrNrOKZahybRg+HRk2iAQDrivfQ1Q/Q==",
+  "dgSpecHash": "CvsTqGJfhTPJCdHV+j6hNUuTQc7bYPzYZvIT0VbmBr2xwAgqk0eI1lHnCWrEZT8pvNomfTV2Nvp1646nXEDJcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\Chat\\Chat\\Chat.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\Api\\ChatAppWithSignalR\\Chat\\Chat.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -23,7 +23,8 @@ namespace Chat.Hubs
                 string user = _contextAccessor.HttpContext.User.Identity.Name;
                 if (!string.IsNullOrWhiteSpace(appUser.ConnectionId))
                 {
-                    await Clients.Client(appUser.ConnectionId).SendAsync("ReceiveMessage", user, message);
+                    var timestamp = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ");
+                    await Clients.Client(appUser.ConnectionId).SendAsync("ReceiveMessage", user, message,timestamp);
                 }
             }
         }
